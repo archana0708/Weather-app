@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+        <link rel="stylesheet" href=>
+
+
+        <style>
+            body {
+                background-color: rgb(222, 237, 232);
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 750px;
+                height: 417px;
+                /* min-height: 570px; */
+            }
+
+            .fbody {
+                margin-top: 8%;
+            }
+
+            .formtitle {
+                font-size: x-large;
+                font-weight: bold;
+                color: #053c40;
+            }
+
+
+            form {
+                background-color: rgba(25, 231, 214, 0.61);
+
+                padding: 30px;
+                top: 50%;
+                left: 70%;
+                text-align: center;
+                border-radius: 16px;
+                width: 75%;
+                height: 55%;
+            }
+
+            .form-label {
+                font-weight: bold;
+                font-size: large;
+                color: rgb(6, 39, 43)
+            }
+
+            #submit {
+                background-color: rgb(6, 68, 67);
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+
+
+        <div class="container">
+            <form method="POST" action="/i2">
+                <div class="formtitle"> Weather Predictor </div>
+                <div class="fbody">
+                    <div class="mb-3">
+                        <label class="form-label">City: </label>
+                        <input type="text" class="city" id="cityid" name="city">
+                    </div>
+                    <input type="submit" class="btn btn-primary" id="submit">
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>

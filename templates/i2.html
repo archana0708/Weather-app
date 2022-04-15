@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather result</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+        <!-- <link rel="stylesheet" href="../static/i2.css"> -->
+        <style>
+            .header {
+                border: medium solid rgb(5, 50, 56);
+                background-color: rgb(222, 238, 238);
+                height: 50%;
+                width: 98%;
+                border-radius: 5%;
+            }
+
+            h2 {
+                font-weight: bold;
+                color: rgb(7, 51, 49);
+            }
+
+            body {
+                background-color: rgb(14, 128, 130);
+            }
+
+            .container {
+                margin: auto;
+                width: 80%;
+                height: 50%;
+                background-color: rgba(200, 240, 241, 0.61);
+                padding: 50px 50px;
+
+                border-radius: 3%;
+            }
+
+            .temp {
+                font-size: large;
+                font-weight: bold;
+                margin-top: 8%;
+                color: rgb(7, 56, 52);
+
+                width: 108%;
+            }
+
+            .icon {
+                font-size: large;
+                font-weight: bold;
+                color: rgb(5, 57, 39);
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <h2>Current Weather Conditions</h2>
+            </div>
+            <div class="temp">
+                <p>Temprature of {{city}} : {{temp}}</p>
+            </div>
+            <!--        <p>Weather Description={{weather_des}}</p>-->
+            <div class="icon">
+                Weather Icon: <img id="wicon" src="http://openweathermap.org/img/wn/{{weather_icon}}.png">
+            </div>
+        </div>
+
+
+    </body>
+
+</html>
